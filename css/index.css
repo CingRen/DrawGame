@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: bottom;
+}
+h1{
+    color:#2c3e50;
+    font-size:24px;
+    text-align: center;
+    margin:10px;
+}
+.game{
+    width: 600px;
+    height: 600px;
+    background: #f0f0f0;
+    margin:0 auto;
+}
+.game .block{
+    float: left;
+    width: 146px;
+    height: 146px;
+    border:2px solid #dddddd;
+    /* 鼠标模拟小手 */
+    cursor: pointer;
+    text-align: center;
+}
+.game .block:hover{
+    background: #2b84e0;
+}
+.game .block .pic{
+    width: 80%;
+    /* 过渡加本身,谁做动画谁加过渡 */
+    transition:transform 0.2s;
+    /* 使用CSS3的变形属性,缩小图片宽度为0 */
+    transform: scaleX(0);
+    margin:0 auto;
+}
+.game .done{
+    background: #a5adb4;
+}
+.game .on .pic{
+    transform: scaleX(1);
+}
